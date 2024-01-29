@@ -7,9 +7,9 @@
 
 </head>
 <Body>
-	<title>Ben Mao Big Moose || ITIS 3135 Homepage</title>
+	<title>Ben Mao Big Moose || ITIS 3135 || Form</title>
 	<header>
-		<h1>Ben Mao Big Moose || ITIS 3135 || Homepage</h1>
+		<h1>Ben Mao Big Moose || ITIS 3135 || Form</h1>
 		<nav>
 			<a href="./">Home</a>
 			||
@@ -18,14 +18,33 @@
 			<a href="contract.html">Contract</a>
 			||
 			<a href="Tables.html">Tables</a>
-			||
-			<a href="form.html">Form</a>
 		</nav>
 	</header>
 	<main>
-		<h2>  ITIS 3135 Home </h2>  
-		<p> This is all the content for my ITIS 3135 class </p>
-
+		<h2>  ITIS 3135 Form </h2>  
+		<h3> User Setup Form </h3>
+        <fieldset>
+        <label>Enter Your Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label>Enter Your Email: <input id="email" name="email" type="email" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label><input id="student" type="radio" name="account-type" class="inline" checked />Student</label>
+        <label ><input id="teacher" type="radio" name="account-type" class="inline" />Teacher</label>
+      </fieldset>
+      <fieldset>
+      <label for="referrer">Skill level with HTML
+        <select id="referrer" name="referrer">
+          <option value="">(select one)</option>
+          <option value="1">Beginner</option>
+          <option value="2">Novice</option>
+          <option value="3">Expert</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset></label>
+        <input type="submit" value="Submit" />
+      </form></fieldset>
 	</main>
 	<footer>
 		<a href="https://webpages.charlotte.edu/bmao/">CLT Site</a>
