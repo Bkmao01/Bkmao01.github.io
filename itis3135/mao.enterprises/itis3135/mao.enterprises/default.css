@@ -1,5 +1,6 @@
 Body{
-    background: rgb(26, 46, 79);
+    background: #635255;
+   
 }
 main{
     text-align: left;
@@ -7,7 +8,7 @@ main{
     margin-right: 20%;
 }
 h1, h2{
-    color: rgb(255, 255, 255);
+    color: #DC965A;
     text-align: center;
 }
 *{
@@ -25,7 +26,7 @@ header{
 }
 
 a:link {
-    color: rgb(225, 250, 0);
+    color: #00360B;
     background-color: transparent;
     text-decoration: none;
   }
@@ -37,7 +38,7 @@ a:link {
   }
   
   a:hover {
-    color: red;
+    color: #CEE5F2;
     background-color: transparent;
     text-decoration: underline;
   }
@@ -46,4 +47,8 @@ a:link {
     color: yellow;
     background-color: transparent;
     text-decoration: underline;
+  }
+
+  footer{
+    text-align: center;
   }
