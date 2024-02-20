@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale01.0"	>
+	<link rel="stylesheet" href="styles/default.css">
+
+</head>
+<Body>
+	<title>Ben Mao Big Moose || ITIS 3135 First Script</title>
+	<header>
+		<h1>Ben Mao Big Moose || ITIS 3135 || First Script</h1>
+		<nav>
+			<a href="./">Home</a>
+			||
+			<a href="introduction.html">Introduction</a>
+			||
+			<a href="contract.html">Contract</a>
+			||
+			<a href="Tables.html">Tables</a>
+			||
+			<a href="form.html">Form</a>
+			||
+			<a href="SPidermaAN/HOME.html">CRAPPY website</a>
+            ||
+            <a href="websiteevaluations.html">Website Evaluations</a>
+		</nav>
+	</header>
+	<main>
+
+		<h2> First Script </h2> 
+        <h3 id="welcome"></h3>
+		<div class="datetime">
+			<div class="time">08:42 PM</div>
+			<div class="date">Sunday, February 18 2024</div>
+		</div>
+
+        <p>Whats your first name?</p>
+        <input id="firstname">
+        <p>Are you doing good or bad?</p>
+        <input id="feel">
+        <button type="button" onclick=" questions()">Submit</button>
+		<p class="name-output" id="output1"></p>
+
+        <p>Please input a number between 1 and 10 to choose your polygon:</p>
+        <input type="text" id="poly" name="poly" placeholder=" 1 - 10" >
+        <button onclick="getPolygon()">Submit</button>
+       
+
+        <section class="moose_buttons">
+            <h3>Buttons About Big Moose Outdoors:</h3>
+            <div class = "myButtons">
+                <button type="button" id="Mountain" onclick="mountain()">What does a mountain look like?</button>
+                <div class="mountain_img">
+                    <img id="mountain_img" src="images/mountain.jpg" alt="mountain" style="display:none;">
+                </div>
+                <button type="button" id=" typesofoutside" onclick="typesofoutside()">What kind of types of wilderness are out there?</button> <br>
+                    <p id="typesofoutside" style="display:none">Many! From woods, beaches, mountains and many more.</p>
+    
+                <button type="button" id=" specilize" onclick="specilize()">What terrain do we specilize in?</button>
+                    <p id="specilize" style="display:none;">We manly focus on mountain trails but our gear can be use multi-terrian.</p>
+        
+                <button type="button" id=" moose" onclick= moose()>How big can a moose get?</button>
+                    <p id="moose" style="display: none;"><b>They can grow up to 6 feet TALL!</b></p>
+            </div> 
+        </section>
+	</main>
+	<footer>
+		<a href="https://webpages.charlotte.edu/bmao/">CLT Site</a>
+		||
+		<a href="https://github.com/Bkmao01">GitHub</a>
+		||
+		<a href="https://Bkmao01.github.io">GitHub Pages</a>
+		||
+		<a href="https://bkmao01.github.io/itis3135/">GitHub Course Page</a>
+		||
+		<a href="https://www.freecodecamp.org/B3nma0">FreeCodeCamp</a>
+		||
+		<a href="https://www.codecademy.com/profiles/B3nma0">Codecademy</a>
+		||
+		<a href="https://www.linkedin.com/in/benmao4">LinkedIn</a>
+		<a>	Designed by Mao Enterprises &copy; 2024</a>
+		<a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+			<img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+		   </a>
+		   <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+			<img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+			 </a>
+		   
+			 <script>
+				document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+				document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+			</script>
+			<script src="firstscripts.js"></script>
+			<script src="scripts/HTMLInclude.min.js"></script>
+	</footer>
+</Body>
+</html>
