@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Mao Big Moose || ITIS 3135 Calculator Attempt</title>
+    <link rel="stylesheet" href="styles/default.css">
+     
+</head> 
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+        <h1>Ben Mao Big Moose || ITIS 3135 Calculator Attempt</h1>
+    </header>
+    <main>
+        <form id="calculatorForm">
+            <input type="text" id="result" readonly>
+            <br>
+            <button type="button" onclick="appendNumber('1')">1</button>
+            <button type="button" onclick="appendNumber('2')">2</button>
+            <button type="button" onclick="addOperator('+')">+</button>
+            <br>
+            <button type="button" onclick="appendNumber('3')">3</button>
+            <button type="button" onclick="appendNumber('4')">4</button>
+            <button type="button" onclick="addOperator('-')">-</button>
+            <br>
+            <button type="button" onclick="appendNumber('5')">5</button>
+            <button type="button" onclick="appendNumber('6')">6</button>
+            <button type="button" onclick="addOperator('*')">*</button>
+            <br>
+            <button type="button" onclick="appendNumber('7')">7</button>
+            <button type="button" onclick="appendNumber('8')">8</button>
+            <button type="button" onclick="appendNumber('9')">9</button>
+            <button type="button" onclick="addOperator('/')">/</button>
+            <br>
+            <button type="button" onclick="calculateResult()">=</button>
+            <button type="button" onclick="clearInput()">C</button>
+          </form>
+
+          
+  <script>
+    let input = document.getElementById('result');
+
+    function appendNumber(number) {
+      input.value += number;
+    }
+
+    function addOperator(operator) {
+      input.value += operator;
+    }
+
+    function calculateResult() {
+
+      input.value = eval(input.value);
+    }
+
+    function clearInput() {
+     
+      input.value = '';
+    }
+  </script>
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 Body{
-    background: rgb(72, 23, 135);
+    background: #7798ab;
 }
 main{
     text-align: left;
@@ -7,7 +7,7 @@ main{
     margin-right: 20%;
 }
 h1, h2{
-    color: rgba(4, 255, 0, 0.748);
+    color: #f2cee6;
     text-align: center;
 }
 *{
@@ -23,7 +23,7 @@ header{
 }
 
 a:link {
-    color: green;
+    color: #0C5B13;
     background-color: transparent;
     text-decoration: none;
   }
@@ -46,15 +46,8 @@ a:link {
     text-decoration: underline;
   }
 
-  ul li:nth-child(odd) {
-    background-color: #1dff088c;
-    color: #ffffff; }
-
-    ul li:nth-child(even) {
-     
-      color: rgba(4, 255, 0, 0.748); }
-    
-
+  
+  
 .tables {
   text-align: left;
   font: Display;
@@ -65,11 +58,11 @@ a:link {
 }
 
 .catergory{
-  color:rgba(4, 255, 0, 0.748);
+  color:#0D1B1E;
 }
 
 label{
-  color: rgba(4, 255, 0, 0.748);
+  color: #0D1B1E;
 }
 
 input,
@@ -85,4 +78,93 @@ select {
 }
 h3{
   color: rgb(251, 255, 5);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  font-size: 20px;
+  }
+  main {
+    margin: 0 auto;
+    max-width: 2200px;
+    width: 90%;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  body {
+  font-size: 20px;
+  }
+  main {
+    margin: 0 auto;
+    max-width: 2200px;
+    width: 90%;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+    }
+    main {
+      margin: 0 auto;
+      max-width: 2000px;
+      width: 90%;
+    }
+}
+.calcattempt {
+  background-color: #4c82ae;
+  border: 1.5px solid navy;
+  color: aliceblue;
+  padding: 3px 6px;
+}
+.calculator_attempt{
+  background-color: aliceblue;
+  border: 1.5px solid #4c82ae;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 11px;
+}
+.container{
+  position: relative;
+  max-width: 300px;
+  width: 300px; 
+  margin: 15px auto; 
+  text-align: center;
+  padding: 10px;
+  border:12px solid #031342;
+}
+.display{
+  height: 80px;
+  width: 100%;
+  margin: 10px auto;
+  outline: none;
+  border: 2px solid #3b7b4b;
+  text-align: right;
+  font-size: 25px;
+  color: black;
+  font-family: Garamond;
+  padding-right: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button{
+  padding: 12px 10px;
+  border: none;
+  font-size: 20px;
+  font-family:Garamond;
+}
+
+.buttons button:active{
+  transform: scale(0.99);
 }

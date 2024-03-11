@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Moose || ITIS3135 BYO Intro</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head> 
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+        <section class="byoborder">
+        <h3>Please fill out the form below so we cant create your own page.</h3>
+        <form class="byo" id="form">
+            <p>Name:</p>
+            <input id="name" name="name" type="text" value="Benjamin Mao" required="">
+            <p>Mascot:</p>
+            <input id="mascot" name="mascot" type="text" value="Big Moose" required="">
+            <p>Image:</p>
+            <input type="file" name="image" id="image" required="">
+            <br>
+            <br>
+            <p">Image Caption:<p></p>
+            <input type="text" id="imagecaption" name="imagecaption" value="Ben in a cool hat" required="">
+            <br>
+            <p>Personal Background:</p>
+            <input type="text" id="personalbackground" name="personalbackground" value="I am from Vietnam. I like to hike and play basketball" required="">
+            <p>Professional Background:</p>
+            <input type="text" id="professionalbackground" name="professionalbackground" value="I am a NSF SFS Scholar" required="">
+            <p>Academic Background:</p>
+            <input type="text" id="academicbackground" name="academicbackground" value="Currently pursuing a masters in cybersecurity" required="">  
+            <p>Background in Web Development:</p>
+            <input type="text" id="backgroundinwebdevelopment" name="backgroundinwebdevelopment" value="Done enough to know I don't like it" required="">
+            <p>Primary Computer Platform:</p>
+            <input type="text" id="primarycomputerplatform" name="primarycomputerplatform" value="Custom PC built by me." required="">  
+            <p id="appendHere">Courses currently taking:</p>
+
+            <button type="button" onclick="addCourse()">Add Course</button>
+            <p>Funny/Interesting Thing?</p>
+            <input type="text" id="funnything" name="funnything" value="I always miss easy layups">
+            <p>Anything Else?</p>
+            <input type="text" id="anythingelse" name="anythingelse" value="time to grind">  
+            <br>
+            <br>
+
+            <label>I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+            <input type="checkbox" id="agreement" checked="" required="">     
+            <br>
+            <input type="submit" value="Submit" class="byosub">
+            <input type="reset" value="Reset" class="byores">
+        
+    </p">
+    </form>
+    </section>
+    </main>
+    <div id="page" class="byodiv"></div>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/byo_intro.js"></script>
+
+</body>
+</html>
